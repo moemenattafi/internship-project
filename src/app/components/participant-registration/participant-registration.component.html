@@ -1,0 +1,26 @@
+<form [formGroup]="registrationForm" (ngSubmit)="register()" novalidate>
+  <mat-form-field>
+    <mat-label>first and last name</mat-label>
+    <input matInput  placeholder="Ex.Jhon" formControlName="nomEtPrenom"/>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>CIN number</mat-label>
+    <input matInput type="number" formControlName="numCin"/>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Services/Directions</mat-label>
+    <input matInput type="text" formControlName="directionEtService"/>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Entreprise</mat-label>
+    <input matInput type="text" formControlName="entreprise"/>
+  </mat-form-field>
+
+
+  <button color="accent" type="submit" [disabled]="!registrationForm.valid" mat-raised-button><span>Save Participant</span></button>
+
+</form>
+

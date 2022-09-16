@@ -1,0 +1,27 @@
+<mat-toolbar color="accent">
+  <span>
+    <a routerLink="/">
+      <span>Centre National d'Informatique</span>
+    </a>
+  </span>
+  <span>
+    <a *ngIf="!isAuthenticated" routerLinkActive="active-link" routerLink="/participant">
+      <span>For Participant</span>
+    </a>
+    <a *ngIf="isAuthenticated" routerLinkActive="active-link" routerLink="/formateur">
+      <span>Formateurs</span>
+    </a>
+    <a *ngIf="isAuthenticated" routerLinkActive="active-link" routerLink="/cycle">
+      <span>Cycles</span>
+    </a>
+    <a *ngIf="!isAuthenticated" routerLinkActive="active-link" routerLink="/signup">
+      <span>Signup</span>
+    </a>
+    <a *ngIf="!isAuthenticated" routerLinkActive="active-link" routerLink="/login">
+      <span>Login</span>
+    </a>
+    <a *ngIf="isAuthenticated" (click)="logout()" routerLinkActive="active-link" routerLink="/login">
+      <span>Logout</span>
+    </a>
+  </span>
+</mat-toolbar>

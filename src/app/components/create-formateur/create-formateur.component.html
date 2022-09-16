@@ -1,0 +1,17 @@
+
+<form [formGroup]="form" #formDirective="ngForm" (ngSubmit)="onSubmit(form.value)" novalidate >
+  <mat-form-field>
+    <mat-label>Nom et prenom</mat-label>
+    <input matInput  formControlName="nomEtPrenom"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Spécialité</mat-label>
+    <input matInput   formControlName="specialite"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Direction</mat-label>
+    <input matInput  formControlName="direction"/>
+  </mat-form-field>
+  <button color="accent" type="submit" [disabled]="!form.valid" mat-raised-button>Ajouter Formateur</button>
+
+</form>

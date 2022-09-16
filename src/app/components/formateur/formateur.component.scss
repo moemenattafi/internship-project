@@ -1,0 +1,20 @@
+mat-card{
+  margin-bottom: 1em;
+  font-size:24px;
+  .b{
+    float:right;
+  }
+  .formateur-nom{
+    font-weight:bold;
+
+  }
+  .formateur-specialite{
+    font-size:16px;
+    font-style:italic;
+
+  }
+  .formateur-direction{
+    margin-top:1em;
+
+  }
+}

@@ -1,0 +1,68 @@
+<form [formGroup]="form" #formDirective="ngForm" (ngSubmit)="onSubmit(form.value)" novalidate >
+  <mat-form-field>
+    <mat-label>Entreprise</mat-label>
+    <input matInput  formControlName="entreprise"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Action number</mat-label>
+    <input matInput   formControlName="numAction"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Theme de formation</mat-label>
+    <input matInput  formControlName="themeDeFormation"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Lieu de déroulement</mat-label>
+    <input matInput  formControlName="lieuDeDeroulement"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Début de période</mat-label>
+    <input matInput placeholder="YYYY-MM-DD" formControlName="debutDePeriode"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Fin de période</mat-label>
+    <input matInput placeholder="YYYY-MM-DD" formControlName="finDePeriode"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Horaire de début</mat-label>
+    <input matInput placeholder="hh:mm:ss" formControlName="horaireDeDebut"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Horaire de fin</mat-label>
+    <input matInput placeholder="hh:mm:ss" formControlName="horaireDeFin"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Début pause</mat-label>
+    <input matInput placeholder="hh:mm:ss"  formControlName="debutPause"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Fin pause</mat-label>
+    <input matInput  placeholder="hh:mm:ss" formControlName="finPause"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Numéro de la salle</mat-label>
+    <input matInput  formControlName="numSalle"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Credit d'impot</mat-label>
+    <input matInput   formControlName="creditDimpot"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Droits de tirage individuelle</mat-label>
+    <input matInput   formControlName="droitsDeTirageIndiv"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Droits de tirage collectif</mat-label>
+    <input matInput   formControlName="droitsDeTirageCollect"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Mode de formation</mat-label>
+    <input matInput   formControlName="modeDeFormation"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Gouvernorat</mat-label>
+    <input matInput   formControlName="gouvernorat"/>
+  </mat-form-field>
+  <button color="accent" type="submit" [disabled]="!form.valid" mat-raised-button>Ajouter Cycle</button>
+
+</form>
