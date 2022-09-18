@@ -1,4 +1,5 @@
 # App
+##############this include the backend and the frontend of my app
 ##############this project doesen't include the famous folder : node_modules#########
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.3.
 
